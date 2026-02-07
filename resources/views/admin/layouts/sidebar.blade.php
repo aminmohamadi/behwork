@@ -231,9 +231,9 @@
                             @can('show_settings_contactUs')
                                 <x-admin.menu-item href="{{route('admin.setting.apply')}}" icon="menu-bullet menu-bullet-dot" :active="request()->routeIs('admin.setting.apply')" label="مدرس شوید" />
                             @endcan
-                            @can('show_settings_sms_ads')
-                                <x-admin.menu-item href="{{route('admin.setting.sms.ads')}}" icon="menu-bullet menu-bullet-dot" :active="request()->routeIs(['admin.setting.fag','admin.setting.fag.create'])" label="پیامک های تبلیغاتی " />
-                            @endcan
+{{--                            @can('show_settings_sms_ads')--}}
+{{--                                <x-admin.menu-item href="{{route('admin.setting.sms.ads')}}" icon="menu-bullet menu-bullet-dot" :active="request()->routeIs(['admin.setting.fag','admin.setting.fag.create'])" label="پیامک های تبلیغاتی " />--}}
+{{--                            @endcan--}}
                     </x-admin.menu-group>
                 @endcan
                 <li class="menu-section">
