@@ -1,5 +1,7 @@
-/public
-/node_modules
-/vendor
-/storage
+/public/
+/node_modules/
+/storage/
 .env
+/vendor/
+/.idea/
+

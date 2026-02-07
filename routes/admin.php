@@ -69,7 +69,7 @@ Route::prefix('admin')->middleware(['auth','role:admin'])->group(function (){
 
 
 
-    Route::get('/settings/sms/ads', App\Http\Controllers\Admin\Sms\IndexSms::class)->name('admin.setting.sms.ads');
+//    Route::get('/settings/sms/ads', App\Http\Controllers\Admin\Sms\IndexSms::class)->name('admin.setting.sms.ads');
 
 
 
