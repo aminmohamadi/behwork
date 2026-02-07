@@ -193,9 +193,9 @@
                 @can('show_logs')
                     <x-admin.menu-item href="{{route('admin.log')}}" icon="flaticon2-list-1" :active="request()->routeIs(['admin.log'])" label=" لاگ های کاربر" />
                 @endif
-                @role('administrator')
-                    <x-admin.menu-item href="{{route('telescope')}}" icon="flaticon-search" :active="request()->routeIs(['telescope'])" label=" گزارش های فنی سیستم" />
-                @endif
+{{--                @role('administrator')--}}
+{{--                    <x-admin.menu-item href="{{route('telescope')}}" icon="flaticon-search" :active="request()->routeIs(['telescope'])" label=" گزارش های فنی سیستم" />--}}
+{{--                @endif--}}
                 {{-- v2-storages --}}
                 @can('show_storages')
                     <x-admin.menu-group icon="far fa-hdd" :active="request()->routeIs(
