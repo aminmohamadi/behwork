@@ -21,7 +21,7 @@ Route::get('/php',function (){
    phpinfo();
 });
 Route::middleware(['auth'])->get('/storage/{episode}/{type}', App\Http\Controllers\StorageController::class)->name('storage');
-Route::get('/storage/{episode}/{filename}', [StorageController::class, 'segment'])->where('filename', '.*');
+Route::get('/storage/{episode}/{filename}',StorageController::class)->where('filename', '.*');
 
 Route::get('/', App\Http\Controllers\Site\Homes\Home::class)->name('home');
 Route::get('/courses', \App\Http\Controllers\Site\Courses\IndexCourse::class)->name('courses');
