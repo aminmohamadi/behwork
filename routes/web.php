@@ -77,17 +77,7 @@ Route::prefix('sale')->name('sale.')->middleware(['auth', 'role:sale', 'sale'])-
     Route::get('/bank-accounts/{action}/{id?}', App\Http\Controllers\SalePerson\BankAccounts\StoreBankAccount::class)->name('store.bankAccounts');
 });
 
-Route::middleware(['guest'])->group(function () {
-    Route::get('login-password', \App\Http\Controllers\Site\Auth\LoginPassword::class)->name('login-password');
-});
+//Route::middleware(['guest'])->group(function () {
+//    Route::get('login-password', \App\Http\Controllers\Site\Auth\LoginPassword::class)->name('login-password');
+//});
 
-
-Route::get('/cer', function () {
-    $x = \App\Models\Transcript::where('certificate_code', '۱۱۳۸۶۵۲۱۳۵')->first();
-    dd($x);
-});
-
-Route::get('login-password',function(){
-    Artisan::call('config:clear');
-
-     })->name('login-password');

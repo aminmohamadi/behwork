@@ -318,10 +318,6 @@
                                    class="flex items-center gap-2 w-full text-foreground transition-colors hover:text-primary px-3 py-2">
                                     <span class="font-semibold text-xs">ورود / ثبت نام</span>
                                 </a>
-                                <a href="{{route('login-password')}}"
-                                   class="flex items-center gap-2 w-full text-foreground transition-colors hover:text-primary px-3 py-2">
-                                    <span class="font-semibold text-xs">ورود با رمز</span>
-                                </a>
                             </div>
                         </div>
                     </div>

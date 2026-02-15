@@ -215,7 +215,7 @@ class NewAuth extends BaseComponent
         } catch (\Exception $e) {
             Log::error($e->getMessage());
         }
-        return redirect()->intended(route('home'));
+        return redirect()->route('home');
 
     }
 
